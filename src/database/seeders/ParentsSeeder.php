@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Parents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class ParentsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        //
+          Parents::firstOrCreate([
+            'name' => 'Soleh',
+            'email' => 'soleh@gmail.com',
+            'phone' => '08120932166',
+        ]);
+    }
+}
